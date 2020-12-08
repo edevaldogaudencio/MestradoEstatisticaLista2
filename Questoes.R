@@ -210,3 +210,23 @@
     
     # A média tende a zero e a variancia tende a 2.
     # Na distribuição normal, a variância tendia a 1
+
+
+########Questão 3 - Distribuição Normal 
+# Explique sucintamente as seguintes definições de estimadores abaixo:
+
+    # A) estimador não-viesado: Um estimador T é não-viesado (ou não tendencioso) se seu valor 
+    #                           esperado for o próprio parâmetro Q que se pretende estimar, 
+    #                           isto é, E(T) = Q 
+    
+    # B) estimador consistente: Consistência é uma propriedade por meio da qual a acurácia de 
+    #                           uma estimativa aumenta quando o tamanho da amostra aumenta.
+    #                           Dizemos que um estimador para o parâmetro é consistente se, 
+    #                           além de ser não-viesado, sua variância tende a zero quando o 
+    #                           tamanho amostral tende a infinito.
+    
+    # C) Explique quando um estimador A é mais eficiente que um estimador B: Caso o estimador
+    #                           A e B sejam não viesados de um mesmo parâmetro Q, o primeiro 
+    #                           será mais efienciente do que o segundo quando a variância de 
+    #                           A for menor que a variância de B.
+    
