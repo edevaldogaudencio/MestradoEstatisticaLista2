@@ -19,7 +19,6 @@
     # Amostra=18
     # Defeito=5% (0.05)
     # Tentativas=2
-    
     prob_0 <- dbinom(0, 18, 0.05)
     prob_1 <- dbinom(1, 18, 0.05)
     prob_2 <- dbinom(2, 18, 0.05)
@@ -212,21 +211,141 @@
     # Na distribuição normal, a variância tendia a 1
 
 
-########Questão 3 - Distribuição Normal 
+########Questão 4 - Distribuição Normal 
 # Explique sucintamente as seguintes definições de estimadores abaixo:
 
-    # A) estimador não-viesado: Um estimador T é não-viesado (ou não tendencioso) se seu valor 
-    #                           esperado for o próprio parâmetro Q que se pretende estimar, 
-    #                           isto é, E(T) = Q 
+    # A) estimador não-viesado: Um estimador T é não-viesado (ou não 
+    #    tendencioso) se seu valor esperado for o próprio parâmetro Q que 
+    #    se pretende estimar, isto é, E(T) = Q 
     
-    # B) estimador consistente: Consistência é uma propriedade por meio da qual a acurácia de 
-    #                           uma estimativa aumenta quando o tamanho da amostra aumenta.
-    #                           Dizemos que um estimador para o parâmetro é consistente se, 
-    #                           além de ser não-viesado, sua variância tende a zero quando o 
-    #                           tamanho amostral tende a infinito.
+    # B) estimador consistente: Consistência é uma propriedade por meio da  
+    #    qual a acurácia deuma estimativa aumenta quando o tamanho da amostra 
+    #    aumenta. Dizemos que um estimador para o parâmetro é consistente se, 
+    #    além de ser não-viesado, sua variância tende a zero quando o tamanho
+    #    amostral tende a infinito.
     
-    # C) Explique quando um estimador A é mais eficiente que um estimador B: Caso o estimador
-    #                           A e B sejam não viesados de um mesmo parâmetro Q, o primeiro 
-    #                           será mais efienciente do que o segundo quando a variância de 
-    #                           A for menor que a variância de B.
+    # C) Explique quando um estimador A é mais eficiente que um estimador B: 
+    #    Caso o estimador A e B sejam não viesados de um mesmo parâmetro Q, 
+    #    o primeiro  será mais efienciente do que o segundo quando a variância 
+    #    de A for menor que a variância de B.
+
+########Questão 5 - Descreva os seguintes conceitos e dê exemplo em cada um dos 
+    #               itens:
+    # A) Erro tipo 1 e tipo 2 de um teste: Nenhum teste de hipótese é 100% certo. 
+    #    O teste é baseado em probabilidades e sempre há uma possibilidade de 
+    #    chegar em uma conclusão errada. Os dois erros possíveis são: tipo 1 
+    #    e tipo 2. Os dois tipos são inversamente relacionados e são 
+    #    determinados pelo nível de significancia e o poder do teste. 
+    #    Logo, é necessário definir qual erro tem consequências mais severas 
+    #    para a situação antes de definir os riscos. 
+    #
+    #    Tipo 1: quando a hipótese nula é verdadeira e você a rejeita, 
+    #    comete um erro do tipo I. A probabilidade de cometer esse tipo de erro
+    #    é o nível de significância que foi definido para o teste de hipóteses.
+    #    Para reduzir o risco de cometer esse erro, você precisa utilizar um 
+    #    valor inferior para o nível de significancia. Exemplo:
+    #
+    #    Tipo 2: Quando a hipótese nula é falsa e você não a rejeita, 
+    #    comete um erro de tipo II. A probabilidade de cometer esse erro depende
+    #    do poder do teste. Para reduzir o risco de cometer esse erro, 
+    #    é necessário garantir que o teste tenha potência suficiente, em outras
+    #    palavras,o tamanho  amostral seja grande o suficiente para detectar 
+    #    uma diferença prática, quando realmente existir uma.
+    
+    # B) poder de um teste de hipótese: O Poder do Teste tem como objetivo  
+    #    conhecer o quanto o teste de hipóteses controla um erro do tipo II, 
+    #    ou qual a probabilidade de rejeitar  a hipótese nula se realmente 
+    #    for falsa.
+    # C) p-valor: O valor-p indica a probabilidade de se observar uma diferença 
+    #    tão grande ou maior do que a que foi observada sob a hipótese nula.
+    
+
+    
+########Questão 6) Explique de forma breve e intuitiva as diferentes formas 
+    #              de estimação:
+    # i)  Estimador de Momentos (mostre o estimador de momento para a média 
+    #     e variância): O método dos momentos consiste em igualar os momentos 
+    #     amostrais aos populacionais. O resultado dessa operação produzirá 
+    #     as estimativas dos parâmetros da distribuição de probabilidades 
+    #     em questão. Seja X uma variável aleatória com média μ e 
+    #     variância σ^2. Neste caso, as seguintes relaçõe são válidas 
+    #     para os dois primeiros momentos populacionais:
+    #     E(X)= μ,   E=(X^2 )=σ^2+ μ^2, do qual obtemos:   
+    #     μ=E(X), σ^2=(X^2 )-E^2 (X)    
+    #
+    
+    
+    # ii) Estimador de mínimos quadrados: é uma técnica de otimização 
+    #     matemática que procura encontrar o melhor ajuste para um conjunto 
+    #     de dados tentando minimizar a soma dos quadrados das diferenças entre 
+    #     o valor estimado e os dados observados.É a forma de estimação mais 
+    #     amplamente utilizada na econometria. 
+    
+    
+    # iii) Estimador de máxima verossimilhança: método para estimar os 
+    #      parâmetros de um modelo estatístico. Assim, a partir de um conjunto 
+    #      de dados e, dado um modelo estatístico, a estimativa por máxima 
+    #      verossimilhança estima valores para os diferentes parâmetros do     
+    #      modelo, buscando maximizar a probabilidade dos dados observados. 
+    #      Apresenta-se como um método geral para estimação de  parâmetros, 
+    #      principalmente no caso de distribuições normais. 
+    
+########Questão 8) 
+# Uma v.a X tem distribuição normal com média 10 e desvio-padrão 4. Imagine 
+# que um jogo premie toda amostra cuja média é maior 12. 
+
+## Item A    
+# Se um participante escolher uma amostra de tamanho 16, qual é a probabilidade 
+# de ele ganhar o prêmio?
+    media <- 10
+    desvio <-4
+    n <- 16
+    erro_padrao <- desvio/sqrt(n)
+    1-pnorm(12,media,erro_padrao) 
+    
+## Item B  
+# Escolha um tamanho de amostra menor que 16 para participar do jogo. Qual a 
+# probabilidade de você ganhar prêmio??
+    # Amostra de 15 observações
+    media <- 10
+    desvio <-4
+    n <- 1:15
+    erro_padrao <- desvio/sqrt(n)
+    1-pnorm(12,media,erro_padrao) 
+    
+## Item C
+# Baseado nos resultados qual o melhor tamanho de amostra para participar 
+# do jogo? 
+    # Conforme pode ser observado, a amostra de tamanho 1 oferece a maior
+    # de o jogador ganhar: 30,85%.
+   
+
+########Questão 9)     
+# Um professor aplica um teste rápido para seus alunos de 20 questões do tipo 
+# certo-errado. O professor coloca como critério de aprovação a seguinte regra 
+# “Para ser aprovado o aluno precisa acertar ao menos 13 questões”. Qual é a 
+# probabilidade de o aluno ser aprovado, apenas marcando as questões ao acaso? 
+# Imagine agora que o professor queira que essa probabilidade de ser aprovado 
+# marcando questões ao acaso seja menor que 5%, como ele deveria alterar a 
+# regra de aprovação? 
+
+    # Interpretando o enunciado:
+    # Questoes=20
+    # Probabilidade=0,5
+    # Sucessos=13    
+    
+    # Qual é a probabilidade de o aluno ser aprovado, apenas marcando as 
+    # questões ao acaso?
+    # probabilidade de >13 é igual 1 - probabilidade acumulada de <12:
+    1-pbinom(12, 20, 0.5)
+    
+    # Aprovação < que 5%
+    1-pbinom(13, 20, 0.5) # >=14     
+    1-pbinom(14, 20, 0.5) # >=15    
+    1-pbinom(15, 20, 0.5) # >=16     
+    1-pbinom(16, 20, 0.5) # >=17
+    
+    # Como pode ser observado, para reduzir a probabilidade de aprovação com
+    # marcação ao acaso para <5%, o professor deve alterar a regra de aprovação 
+    # para 15 acertos ou mais.
     
